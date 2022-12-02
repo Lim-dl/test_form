@@ -17,7 +17,7 @@ a {
 .button {
 	background: #f64c72;
 	color: #fff;
-    padding: 0 5px;
+	padding: 0 5px;
 	border: none;
 	width: 200px;
 	height: 50px;
@@ -315,23 +315,27 @@ h3.step-request {
 
 input,
 select,
-.radio-group{
+.radio-group {
 	float: right;
 
 	height: 40px;
 }
 
-input:invalid{
-	border:2px solid #99738E;
-}
-input:valid{
-	border:2px solid #F64C72;
+input:invalid {
+	border: 2px solid #99738E;
 }
 
-#amount_service, #month_count {
+input:valid {
+	border: 2px solid #F64C72;
+}
+
+#amount_service,
+#month_count {
 	width: 93px;
 }
-#amount_range, #month_range {
+
+#amount_range,
+#month_range {
 	width: 307px;
 }
 
@@ -343,23 +347,24 @@ input:valid{
 }
 
 input,
-select
-{
+select {
 	width: 400px;
 	padding-left: 12px;
 	border: 2px solid #F64C72;
 	font-size: 16px;
 }
 
-form{
+form {
 	display: flex;
 	flex-direction: column;
 }
+
 @media all and (max-width: 700px) {
-	.track-form{
+	.track-form {
 		display: none;
 	}
-	.post-form{
+
+	.post-form {
 		width: 100%;
 	}
 
@@ -397,58 +402,62 @@ form{
 		width: 100%;
 		min-width: 0;
 	}
-	
+
 	.post-form {
 		float: none;
 		width: 100%;
 		padding: 0;
 	}
-	
+
 	h3.step-request {
 		font-size: 15px;
 		color: #99738E;
 		border-bottom: 2px solid #99738E;
 	}
-	label{
+
+	label {
 		font-size: 13px;
 	}
-	
+
 	.radio-group__item {
 		display: inline-flex;
 		float: left;
 	}
-	
+
 	input,
 	select,
-	.radio-group{
+	.radio-group {
 		float: right;
 	}
-	
-	input:invalid{
-		border:2px solid #99738E;
+
+	input:invalid {
+		border: 2px solid #99738E;
 	}
-	input:valid{
-		border:2px solid #F64C72;
+
+	input:valid {
+		border: 2px solid #F64C72;
 	}
-	
-	#amount_service, #month_count {
+
+	#amount_service,
+	#month_count {
 		width: 20%;
 	}
-	#amount_range, #month_range {
+
+	#amount_range,
+	#month_range {
 		width: 80%;
 	}
-	
+
 	input,
-	select
-	{
+	select {
 		height: 30px;
 		width: 100%;
 		padding-left: 12px;
 		border: 2px solid #F64C72;
 		font-size: 13px;
 	}
-	
-	form{
+
+	form {
 		display: flex;
 		flex-direction: column;
 	}
@@ -456,7 +465,7 @@ form{
 	.button {
 		background: #f64c72;
 		color: #fff;
-	
+
 		border: none;
 		width: 150px;
 		height: 35px;
@@ -465,14 +474,14 @@ form{
 		font-size: 13px;
 		letter-spacing: 1px;
 	}
-	
+
 	button:hover {
 		text-decoration: dashed;
 		background: #f66452;
 	}
 }
 
-.helper{
+.helper {
 	color: #f64c72;
 	font-weight: 600;
 }
@@ -492,16 +501,18 @@ footer {
 	bottom: 0px;
 	top: calc(100vh - 49px);
 }
-label{
+
+label {
 	margin-bottom: 25px;
 }
+
 footer p {
 	margin: 0;
 	padding: 0;
 }
 
-.finish-request{
-    display: flex;
+.finish-request {
+	display: flex;
 	animation: slowShow 0.3s;
 	position: fixed;
 	z-index: 100;
@@ -517,8 +528,9 @@ footer p {
 	align-items: flex-start;
 	justify-content: center;
 }
+
 .popup__window-request {
-    position: relative;
+	position: relative;
 	background-color: #fff;
 	max-width: 800px;
 	min-width: 300px;
