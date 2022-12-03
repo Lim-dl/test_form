@@ -34,9 +34,8 @@ $password = ""; // Пароль БД
 $dbname = 'f95083ga_bank'; // Имя БД
 
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -54,7 +53,7 @@ if ($conn->query($sql) === TRUE) {
   $client_id = $conn->insert_id;
   //echo "New record created successfully. Last inserted ID is: " . $client_id;
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  //echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 
@@ -139,7 +138,7 @@ $conn->close();
 
 	<div class="popup">
 		<div class="popup__window" role="dialog" aria-modal="true">
-			<a href="index.php"> <button class="popup__close">x</button></a>
+			<a href="index.html"> <button class="popup__close">x</button></a>
 			<h2>Запрос на оформление</h2>
       <p><?php echo $lstName . " " . $fstName?>, тепрь вы можете обратится в наш отдел для завершения заявки по ставке !</p>
 		</div>
